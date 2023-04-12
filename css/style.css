@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,900&display=swap');
+
+:root{
+    --background-body-sun: #8b8b8b;
+    --background-body-dark: #24262C;
+
+    --background-header-sun: #FFFFFF;
+    --background-header-dark: #1A1A1A;
+
+    --color-full: #FFFFFF;
+    --color-div-sun: #F5F5F5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    display: flex;
+    background: var(--background-body-sun);
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-header-sun);
+    justify-content: space-evenly;
+    color: var(--color-header-dark);
+    height: 100vh;
+    padding: 0px 20px; 
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+header i{
+    font-size: 25pt;
+}
+
+/* Header */
+
+/* Header .divs */
+
+header .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+/* Header .divs */
+
+/* Header .divs .divs*/
+header .menu div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    border-radius: 7px;
+    transition: all 650ms ease-in-out;
+    cursor: pointer;
+}
+
+header .menu label{
+    text-align: center;
+    display: flex;
+    margin: 10px 10px 0px 10px;
+}
+
+header .menu .off:hover{
+    background: var(--color-div-sun);
+}
+/* Header .divs .divs*/
+
+/* Header .divs .divs .divs*/
+header .mode div i{
+    font-size: 20pt;
+}
+
+header .mode div{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+header .mode .dark{
+    background: black;
+    color: var(--color-full);
+}
+
+header .mode .sun{
+    background: var(--background-header-sun);
+    color: var(--background-header-dark);
+}
+
+.dark-mode-body{
+    background: var(--background-body-dark);
+    color: var(--color-div-sun);
+}
+
+.dark-mode-header{
+    background: var(--background-header-dark);
+    color: var(--color-div-sun);
+}
+
+.dark-mode-header-about-menu{
+    color: var(--background-body-dark);
+}
+
+.dark-mode-header-menu-div:hover{
+    background: var(--background-body-dark);
+}
+
+.sun-on{
+    display: flex;
+}
+
+.dark-off, .sun-off{
+    display: none;
+}
+/* Header .divs .divs .divs*/
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    width: 100%;
+}
+
+main .main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+main .main div{
+    display: flex;
+    width: 50%;
+    justify-content: baseline;
+    align-items: stretch;
+}
+
+main .main .section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+main .main .section h1{
+    font-size: 32.8pt;
+}
+
+main .main .section p{
+    text-align: justify;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+main .main .people{
+    text-align: center;
+    padding: 30px;
+}
+
+main .main .people i{
+    font-size: 150pt;
+}
+
+/* Button */
+
+button{
+    background: #1A1A1A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 60px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    border-radius: 7px;
+    font-family:  Montserrat, sans-serif;
+    transition: all 650ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+/* Button */
+
+/* Social */
+/* main .main  */.social li{
+    margin-right: 20px;
+    font-size: 15pt;
+}
+
+/* main .main */ .social li a{
+    color: var(--color-header-dark);
+}
+
+/* main .main  */.social{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+/*  */
+main .projects, main .blog, main .contact, main .curriculum{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 30pt;
+}
+
+main .projects ul, main .blog ul, main .contact ul, main .curriculum ul{
+    margin-left: 15px;
+}
+
+main .container-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .projects i, main .blog i, main .contact i, main .curriculum i{
+    font-size: 30pt;
+}
+
+img{
+    border-radius: 80%;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*  */
+
+/* Media Query of 858px */
+@media screen and (max-width: 858px){
+    body{
+        flex-direction: column;
+    }
+
+    /* Header */
+    header{
+        flex-direction: column-reverse;
+        height: 16vh;
+    }
+
+    header .mode div{
+        padding: 0px;
+    }
+
+    header .mode div i{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    header .mode{
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    header .menu{
+        flex-direction: row;
+        justify-content: baseline;
+        margin-top: -20px;
+       
+    }
+
+    header .menu div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        width: 40px;
+        padding-bottom: 15px;
+    }
+
+    header .menu div p{
+        display: none;
+    }
+    
+    header div div i{
+        font-size:  20pt;
+    }
+    /* Header */
+
+    main{
+        padding: initial;
+        margin: initial;
+    }
+    
+    main .main div{
+        width: 85vw;  
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .main .section h1{
+        font-size: 20pt;
+    }
+
+    main .main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: -50px;
+        height: 85vh;
+    }
+
+    main .main .section{
+        padding: 20px;
+    }
+
+    main .projects, main .blog, main .contact, main .curriculum{
+        height: 85vh;
+    }
+
+    main .projects h1, main .blog h1, main .contact h1, main .curriculum h1{
+        font-size: 30pt;
+    }
+
+    main .projects p, main .blog p, main .contact p, main .curriculum p{
+        font-size: 20pt;
+    }
+
+    main .projects i, main .blog i, main .contact i, main .curriculum i{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 390px){
+    header .menu div i{
+        font-size: 18pt;
+    }
+
+    header .menu div{
+        padding: 10px 0px;
+    }
+
+    header .mode div i{
+        font-size: 10pt;
+    }
+
+    header .mode div{
+        padding: 0px;
+    }
+
+    main .main{
+        margin-top: -30px;
+    }
+}
+

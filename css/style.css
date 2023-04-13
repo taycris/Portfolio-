@@ -210,7 +210,7 @@ button:hover{
 }
 
 /*  */
-main .projects, main .blog, main .contact, main .curriculum{
+main .projects,  main .curriculum{
     display: none;
     justify-content: center;
     align-items: center;
@@ -220,7 +220,7 @@ main .projects, main .blog, main .contact, main .curriculum{
     font-size: 30pt;
 }
 
-main .projects ul, main .blog ul, main .contact ul, main .curriculum ul{
+main .projects ul, main .curriculum ul{
     margin-left: 15px;
 }
 
@@ -231,7 +231,7 @@ main .container-div{
     flex-direction: column;
 }
 
-main .projects i, main .blog i, main .contact i, main .curriculum i{
+main .projects i, main .curriculum i{
     font-size: 30pt;
 }
 
@@ -324,19 +324,19 @@ img{
         padding: 20px;
     }
 
-    main .projects, main .blog, main .contact, main .curriculum{
+    main .projects,  main .curriculum{
         height: 85vh;
     }
 
-    main .projects h1, main .blog h1, main .contact h1, main .curriculum h1{
+    main .projects h1,   main .curriculum h1{
         font-size: 30pt;
     }
 
-    main .projects p, main .blog p, main .contact p, main .curriculum p{
+    main .projects p, main .curriculum p{
         font-size: 20pt;
     }
 
-    main .projects i, main .blog i, main .contact i, main .curriculum i{
+    main .projects i, main .curriculum i{
         font-size: 20pt;
     }
 }
